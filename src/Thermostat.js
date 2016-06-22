@@ -43,6 +43,22 @@ function Thermostat() {
     this.powerSaving = false;
   };
 
+  this.resetTemperature=function() {
+    this.temperature = START_TEMPERATURE;
+  };
+
+  this.energyUsage=function() {
+    if(this.temperature < LOW_THRESHOLD)
+
+    }
+  });
+
+  // this.setCurrentTemperature=function(temperature) {
+  //   if(!isMaximumTemperature(this.powerSaving, this.temperature)) {
+  //     this.temperature = temperature;
+  //   }
+  // };
+
 }
 
 

@@ -27,7 +27,20 @@ describe('Thermostat', function() {
         thermostat.decreaseTemperature();
     }
     expect(thermostat.getCurrentTemperature()).toEqual(10);
-  })
+  });
+
+  it(".reset sets temperature to default temperature", function() {
+    thermostat.increaseTemperature();
+    thermostat.resetTemperature();
+    expect(thermostat.temperature).toEqual(20);
+  });
+
+  it(".getColor returns green when temp under LOW_THRESHOLD", function() {
+    for(var i = 0; i< 3; i++ ) {
+        thermostat.decreaseTemperature();
+    }
+    expect(thermostat.getColor).toEqual("green")
+  });
 
   describe("when power saving mode is on", function() {
     it(".increase won't increase temperature past 25 degress", function(){
@@ -48,5 +61,6 @@ describe('Thermostat', function() {
       expect(thermostat.getCurrentTemperature()).toEqual(32);
     });
   });
+
 
 });
