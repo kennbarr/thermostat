@@ -2,6 +2,8 @@
 
 function Thermostat() {
 
+  const LOW_ENERGY_THRESHOLD = 18;
+  const MID_ENERGY_THRESHOLD = 25;
   const START_TEMPERATURE = 20;
   const MIN_TEMPERATURE = 10;
   const POWER_SAVING_MODE_ON_MAX_TEMPERATURE = 25;
@@ -36,6 +38,9 @@ function Thermostat() {
   };
 
   this.enablePowerSavingMode=function() {
+    if (this.temperature > POWER_SAVING_MODE_ON_MAX_TEMPERATURE) {
+      this.temperature = POWER_SAVING_MODE_ON_MAX_TEMPERATURE;
+    }
     this.powerSaving = true;
   };
 
@@ -47,24 +52,13 @@ function Thermostat() {
     this.temperature = START_TEMPERATURE;
   };
 
-  this.energyUsage=function() {
-    if(this.temperature < LOW_THRESHOLD)
-
+  this.energyUsage= function() {
+    if(this.temperature < LOW_ENERGY_THRESHOLD) {
+      return 'low_usage';
+    } else if (this.temperature < MID_ENERGY_THRESHOLD) {
+      return 'mid_usage';
+    } else {
+      return 'high_usage';
     }
-  });
-
-  // this.setCurrentTemperature=function(temperature) {
-  //   if(!isMaximumTemperature(this.powerSaving, this.temperature)) {
-  //     this.temperature = temperature;
-  //   }
-  // };
-
+  };
 }
-
-
-
-
-// Thermostat.prototype.decreaseTemperature= function() {
-//   if(this.temperature > this.MIN_TEMPERATURE) {
-//     this.temperature--;
-//   }
