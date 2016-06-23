@@ -1,0 +1,11 @@
+.low_usage  {
+  color: green;
+}
+
+.mid_usage  {
+  color: orange;
+}
+
+.high_usage  {
+  color: red;
+}
