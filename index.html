@@ -8,15 +8,19 @@
     <script src='src/justgage.js'></script>
     <script src='src/raphael-2.1.4.min.js'></script>
 
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css">
 
   </head>
   <body>
-    <div id="gauge" style="width: 700px; height: 500px; background-color: #25B2B2"></div>
-    <h1 id='temperature'></h1>
-    <button id='increase'>+</button>
-    <button id='decrease'>-</button>
-    <button id='reset'>reset</button>
+    <div id="gauge"></div>
+
+    <div id="button_wrapper">
+      <button id='increase' class="plus_button"></button>
+      <button id='decrease' class="minus_button"></button>
+      <button id='reset' class="reset_button"></button>
+    </div>
+
     Power saving: <span id='PSM_status'></span>
     <button id='PSM_on'>PSM on</button>
     <button id='PSM_off'>PSM_off</button>

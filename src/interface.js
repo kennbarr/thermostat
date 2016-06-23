@@ -8,8 +8,7 @@ $(document).ready(function(){
   apiCall();
 
   function updateTemperature() {
-    $('#temperature').text(thermostat.getCurrentTemperature());
-    $('#temperature').attr('class',thermostat.energyUsage());
+    $('body').attr('class','c'+ thermostat.getCurrentTemperature());
   }
 
   updateTemperature();

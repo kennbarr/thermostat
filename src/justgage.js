@@ -75,7 +75,7 @@ JustGage = function(config) {
 
     // titleFontFamily : string
     // color of gauge title
-    titleFontFamily: kvLookup('titleFontFamily', config, dataset, "sans-serif"),
+    titleFontFamily: kvLookup('titleFontFamily', config, dataset, "'Roboto Condensed', sans-serif"),
 
     // titlePosition : string
     // 'above' or 'below'
@@ -140,7 +140,7 @@ JustGage = function(config) {
 
     // labelFontColor : string
     // color of label showing label under value
-    labelFontColor: kvLookup('labelFontColor', config, dataset, "#FFFFFF"),
+    labelFontColor: kvLookup('labelFontColor', config, dataset, ""),
 
     // shadowOpacity : int
     // 0 ~ 1

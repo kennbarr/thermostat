@@ -1,3 +1,10 @@
+body {
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
 .low_usage  {
   color: green;
 }
@@ -8,4 +15,144 @@
 
 .high_usage  {
   color: red;
+}
+
+.plus_button  {
+  width: 50px;
+  height: 50px;
+  border: 0px;
+  transition: all 0.3s;
+  opacity: 0.5;
+  background-image: url(images/plus.png);
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  margin: 0px 4px 0px 4px;
+}
+
+.plus_button:hover  {
+  opacity: 1;
+}
+
+.minus_button  {
+  width: 50px;
+  height: 50px;
+  border: 0px;
+  transition: all 0.3s;
+  opacity: 0.5;
+  background-image: url(images/minus.png);
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  margin: 0px 4px 0px 4px;
+}
+
+.minus_button:hover  {
+  opacity: 1;
+}
+
+.reset_button  {
+  width: 110px;
+  height: 50px;
+  border: 0px;
+  transition: all 0.3s;
+  opacity: 0.5;
+  background-image: url(images/reset.png);
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  margin: 0px 4px 0px 4px;
+}
+
+.reset_button:hover  {
+  opacity: 1;
+}
+
+#gauge  {
+  width: 600px;
+  height: 500px;
+  top: 0px;
+  left: 0px;
+  background-image: url(images/dial_lines.png);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#button_wrapper {
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 420px;
+}
+
+.c10  {
+  background-color: #00B156;
+}
+.c11  {
+  background-color: #00B156;
+}
+.c12  {
+  background-color: #00AF4E;
+}
+.c13  {
+  background-color: #24AF43;
+}
+.c14  {
+  background-color: #3EAC3B;
+}
+.c15  {
+  background-color: #57AB30;
+}
+.c16  {
+  background-color: #6FA925;
+}
+.c17  {
+  background-color: #87A718;
+}
+.c18  {
+  background-color: #9FA500;
+}
+.c19  {
+  background-color: #B7A400;
+}
+.c20  {
+  background-color: #CEA200;
+}
+.c21  {
+  background-color: #E8A000;
+}
+.c22  {
+  background-color: #F89D00;
+}
+.c23  {
+  background-color: #F39200;
+}
+.c24  {
+  background-color: #EE8800;
+}
+.c25  {
+  background-color: #E87C00;
+}
+.c26  {
+  background-color: #E37100;
+}
+.c27  {
+  background-color: #DD6600;
+}
+.c28  {
+  background-color: #D85C00;
+}
+.c29  {
+  background-color: #D35000;
+}
+.c30  {
+  background-color: #CD4500;
+}
+.c31  {
+  background-color: #C83A09;
+}
+.c32  {
+  background-color: #C6360D;
 }
