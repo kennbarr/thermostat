@@ -13,7 +13,12 @@
 
   </head>
   <body>
-    <div id="gauge"></div>
+    <div id="gauge" class="psm_gauge_1"></div>
+
+    <div id="psm_wrapper">
+      <span id="psm_text">power saving</span>
+      <button id="psm_button" class="psm_button_1">on</button>
+    </div>
 
     <div id="button_wrapper">
       <button id='increase' class="plus_button"></button>
@@ -21,19 +26,17 @@
       <button id='reset' class="reset_button"></button>
     </div>
 
-    Power saving: <span id='PSM_status'></span>
-    <button id='PSM_on'>PSM on</button>
-    <button id='PSM_off'>PSM_off</button>
-
-    <h2 id="city"></h2>
-    Current temperature: <span id="city_temp"></span><br>
-    <select id="city_list">
-      <option value="england/London">London</option>
-      <option value="france/Paris" id="paris">Paris</option>
-      <option value="NY/NewYork">New York</option>
-      <option value="Germany/Berlin">Berlin</option>
-      <option value="Italy/Rome">Rome</option>
-    </select>
+    <section>
+      <div id="weather_wrapper">
+        <div class="cityName">London</div>
+        <div class="currentTemp">current temperature:</div>
+        <div class="cityTemp">20.0</div>
+        <div class="celsius">c</div>
+        <form id="select-city">
+          <input id="current-city" type="text" placeholder="Enter a city" class="inputBox"></input>
+        </form>
+      </div>
+    </section>
   </body>
 
 </html>

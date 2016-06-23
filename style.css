@@ -3,6 +3,7 @@ body {
   padding: 0;
   transition: all 0.5s;
   font-family: 'Roboto Condensed', sans-serif;
+  color: #FFF;
 }
 
 .low_usage  {
@@ -73,18 +74,148 @@ body {
   height: 500px;
   top: 0px;
   left: 0px;
-  background-image: url(images/dial_lines.png);
   margin-left: auto;
   margin-right: auto;
+}
+
+.gauge_psm_on {
+  background-image: url(images/dial_lines_1.png);
+}
+
+.gauge_psm_off {
+  background-image: url(images/dial_lines_2.png);
 }
 
 #button_wrapper {
   width: 100%;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   position: absolute;
   top: 420px;
+}
+
+#psm_wrapper {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 100px;
+}
+
+#psm_text {
+  width: 40px;
+  font-size: 14px;
+  margin-left: 290px;
+}
+
+#psm_button{
+  width: 80px;
+  height: 60px;
+  font-size: 48px;
+  background-color: transparent;
+  color: #FFF;
+  font-family: 'Roboto Condensed', sans-serif;
+  border: 0px;
+  cursor: pointer;
+  outline: none;
+  text-align: left;
+}
+
+.psm_button_1 {
+  opacity: 0.8;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.psm_button_1:hover {
+  opacity: 1;
+}
+
+.psm_button_2 {
+  opacity: 0.4;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.psm_button_2:hover {
+  opacity: 1;
+}
+
+#weather_wrapper  {
+  width: 214px;
+  min-width: 212px;
+  height: 142px;
+  background-color: rgba(0,0,0,0.2);
+  margin-left:auto;
+  margin-right: auto;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+  margin-top: -20px;
+}
+
+.cityName {
+  font-size: 30px;
+  width: 212px;
+  float: left;
+}
+
+.cityTemp {
+  font-size: 40px;
+  float: left;
+  width: 80px;
+  height: 50px;
+  margin-top: -5px;
+}
+
+.currentTemp {
+  font-size: 14px;
+  float: left;
+  width: 100px;
+  height: 50px;
+  padding-top: 3px;
+  text-align: right;
+}
+
+.celsius  {
+  font-size: 26px;
+  float: left;
+  width: 30px;
+  height: 50px;
+  text-align: left;
+  margin-top: -4px;
+  margin-left: -4px;
+}
+
+.inputBox {
+  width: 194px;
+  height: 40px;
+  background-color: rgba(0,0,0,0.2);
+  border: 0px;
+  outline: none;
+  color: #FFF;
+  font-size: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+  padding-left: 10px;
+}
+
+input::-webkit-input-placeholder {
+   color: #FFF;
+   opacity: 0.5;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+  color: #FFF;
+  opacity: 0.5;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+  color: #FFF;
+  opacity: 0.5;
+}
+
+input:-ms-input-placeholder {
+  color: #FFF;
+  opacity: 0.5;
 }
 
 .c10  {

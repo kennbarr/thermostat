@@ -144,7 +144,7 @@ JustGage = function(config) {
 
     // shadowOpacity : int
     // 0 ~ 1
-    shadowOpacity: kvLookup('shadowOpacity', config, dataset, 0.2),
+    shadowOpacity: kvLookup('shadowOpacity', config, dataset, 0.0),
 
     // shadowSize: int
     // inner shadow size
