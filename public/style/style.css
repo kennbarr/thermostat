@@ -24,7 +24,7 @@ body {
   border: 0px;
   transition: all 0.3s;
   opacity: 0.5;
-  background-image: url(images/plus.png);
+  background-image: url(/images/plus.png);
   background-color: transparent;
   cursor: pointer;
   outline: none;
@@ -41,7 +41,7 @@ body {
   border: 0px;
   transition: all 0.3s;
   opacity: 0.5;
-  background-image: url(images/minus.png);
+  background-image: url(/images/minus.png);
   background-color: transparent;
   cursor: pointer;
   outline: none;
@@ -58,7 +58,7 @@ body {
   border: 0px;
   transition: all 0.3s;
   opacity: 0.5;
-  background-image: url(images/reset.png);
+  background-image: url(/images/reset.png);
   background-color: transparent;
   cursor: pointer;
   outline: none;
@@ -79,11 +79,11 @@ body {
 }
 
 .gauge_psm_on {
-  background-image: url(images/dial_lines_1.png);
+  background-image: url(/images/dial_lines_1.png);
 }
 
 .gauge_psm_off {
-  background-image: url(images/dial_lines_2.png);
+  background-image: url(/images/dial_lines_2.png);
 }
 
 #button_wrapper {

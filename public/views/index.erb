@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thermostat</title>
+    <script src='./js/Thermostat.js'></script>
+    <script src='./js/lib/jquery.js'></script>
+    <script src='./js/interface.js'></script>
+    <script src='./js/lib/justgage.js'></script>
+    <script src='./js/lib/raphael-2.1.4.min.js'></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style/style.css">
+
+  </head>
+  <body>
+    <div id="gauge" class="psm_gauge_1"></div>
+
+    <div id="psm_wrapper">
+      <span id="psm_text">power saving</span>
+      <button id="psm_button" class="psm_button_1">on</button>
+    </div>
+
+    <div id="button_wrapper">
+      <button id='increase' class="plus_button"></button>
+      <button id='decrease' class="minus_button"></button>
+      <button id='reset' class="reset_button"></button>
+    </div>
+
+    <section>
+      <div id="weather_wrapper">
+        <div class="cityName">London</div>
+        <div class="currentTemp">current temperature:</div>
+        <div class="cityTemp">20.0</div>
+        <div class="celsius">c</div>
+        <form id="select-city">
+          <input id="current-city" type="text" placeholder="Enter a city" class="inputBox"></input>
+        </form>
+      </div>
+    </section>
+  </body>
+
+</html>
