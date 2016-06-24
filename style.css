@@ -157,6 +157,7 @@ body {
   font-size: 30px;
   width: 212px;
   float: left;
+  margin-bottom: 8px;
 }
 
 .cityTemp {
@@ -174,6 +175,7 @@ body {
   height: 50px;
   padding-top: 3px;
   text-align: right;
+  opacity: 0.7;
 }
 
 .celsius  {
@@ -184,6 +186,7 @@ body {
   text-align: left;
   margin-top: -4px;
   margin-left: -4px;
+  opacity: 0.7;
 }
 
 .inputBox {
